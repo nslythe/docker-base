@@ -8,6 +8,4 @@ STOPSIGNAL SIGTERM
 
 COPY root /
 
-
-
 ENTRYPOINT ["python3", "-u", "/go.py"]
