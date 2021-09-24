@@ -1,4 +1,6 @@
-FROM ubuntu:16.04
+ARG UBUNTU_VERSION=20.04
+
+FROM ubuntu:${UBUNTU_VERSION}
 
 RUN apt-get update && apt-get install -y python3 python3-pip
 
