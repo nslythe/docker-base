@@ -7,6 +7,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=America/Montreal
 
 RUN apt-get update && apt-get install -y python3 python3-pip tzdata
+RUN python3 -m pip install requests
 
 STOPSIGNAL SIGTERM
 
