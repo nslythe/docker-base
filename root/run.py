@@ -1,6 +1,7 @@
 import time
+import go
 
-class Run(object):
+class Runner(go.BaseRunner):
     def __init__(self):
         self.stopping = False
 
