@@ -11,7 +11,7 @@ RUN python3 -m pip install requests
 
 STOPSIGNAL SIGTERM
 
-HEALTHCHECK --start-period=5s --interval=5s  CMD python3 -u /check_health.py
+HEALTHCHECK CMD python3 -u /check_health.py
 
 COPY root /
 
