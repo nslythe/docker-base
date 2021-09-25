@@ -37,6 +37,10 @@ class WatchDog(threading.Thread):
         self.stopping = True
 
     def run(self):
+        try:
+            os.unlink(check_health.pipe_runner_name)
+        except:
+            pass
         os.mkfifo(check_health.pipe_runner_name)
         fifor = os.open(check_health.pipe_runner_name, os.O_RDONLY | os.O_NONBLOCK)
 

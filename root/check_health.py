@@ -1,8 +1,8 @@
 import os
 import sys
 
-pipe_runner_name = "pipe-runner"
-pipe_watch_name = "pipe-watch"
+pipe_runner_name = "/pipe-runner"
+pipe_watch_name = "/pipe-watch"
 
 check_command = "check"
 ok_result = "ok"
